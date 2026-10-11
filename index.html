@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b72">
+  <title>Selamat Ulang Tahun, Ummi Tersayang! 💙❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sky-decor" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#beranda"><span class="brand-heart">♥</span> Untuk Ummi</a>
+    <span class="made-by">Dibuat dengan cinta oleh Mutiara Afifah</span>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="beranda">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>✦</span> Hari istimewa untuk seseorang yang istimewa <span>✦</span></p>
+        <h1>Selamat Ulang Tahun,<br><em>Ummi Tersayang!</em> 🎂💙❤️</h1>
+        <p class="intro">Untuk rumah ternyaman, doa terindah, dan cinta yang selalu pulang kepadaku. Semoga hari Ummi dipenuhi hal-hal kecil yang membuat hati tersenyum.</p>
+        <div class="hero-actions">
+          <button class="button primary" id="openLetterTop">💌 Buka Surat untuk Ummi</button>
+          <a class="button secondary" href="#kenangan">Lihat Kenangan ↓</a>
+        </div>
+        <div class="tiny-note">Satu hari untuk merayakan Ummi, berjuta alasan untuk menyayanginya.</div>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait-frame">
+          <img src="foto/ummi.jpg" alt="Foto Ummi tersayang" class="main-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="photo-placeholder main-placeholder"><span>♡</span><b>Foto Ummi</b><small>Letakkan foto asli Ummi di<br><code>foto/ummi.jpg</code></small></div>
+        </div>
+        <span class="float-sticker sticker-one">♡</span><span class="float-sticker sticker-two">✦</span>
+        <div class="portrait-caption">My first home, my forever love <span>💙</span></div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">SCROLL PELAN-PELAN <span>↓</span></div>
+    </section>
+
+    <section class="music-section section-wrap" aria-labelledby="music-title">
+      <div class="section-heading">
+        <p class="eyebrow">♫ Melodi kecil untuk Ummi</p>
+        <h2 id="music-title">Tekan play, lalu nikmati harinya 💗</h2>
+        <p>Musik instrumental orisinal dengan melodi ceria, bunyi piano lembut, dan lonceng berkilau.</p>
+      </div>
+      <div class="music-card">
+        <div class="music-art"><span class="music-note">♫</span><span class="music-spark">✧</span><span class="music-heart">♥</span></div>
+        <div class="music-info">
+          <div class="track-label">INSTRUMENTAL ORIGINAL</div>
+          <h3>Melodi Bahagia untuk Ummi</h3>
+          <p>Piano ceria · Lonceng lembut · Tanpa vokal</p>
+          <div class="audio-controls">
+            <button class="play-button" id="playMusic" aria-label="Putar musik">▶</button>
+            <div class="track-progress">
+              <input id="seekBar" aria-label="Posisi lagu" type="range" min="0" max="100" value="0">
+              <div class="time-row"><span id="currentTime">0:00</span><span id="duration">1:00</span></div>
+            </div>
+            <label class="volume-control" title="Volume">♪ <input id="volume" aria-label="Volume musik" type="range" min="0" max="1" step="0.01" value="0.75"></label>
+          </div>
+          <audio id="birthdayAudio" preload="metadata" loop>
+            <source src="audio/lagu-ulang-tahun-ummi.wav" type="audio/wav">
+            Browser ini belum mendukung pemutar audio.
+          </audio>
+          <p class="audio-hint" id="audioStatus">Musik baru akan terdengar saat tombol play ditekan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter-section section-wrap" id="surat">
+      <div class="section-heading">
+        <p class="eyebrow">Dari hati Mutiara</p>
+        <h2>Ada surat kecil untuk Ummi…</h2>
+        <p>Beberapa kata mungkin tak cukup untuk membalas semua cinta Ummi, tapi semuanya kutulis dengan sepenuh hati.</p>
+      </div>
+      <div class="envelope-area">
+        <div class="envelope" id="envelope" aria-hidden="true">
+          <div class="envelope-back"></div><div class="letter-peek"><span>Untuk Ummi tersayang</span> 💙</div>
+          <div class="envelope-flap"></div><div class="envelope-front"></div><div class="envelope-seal">♥</div>
+        </div>
+        <button class="button primary letter-button" id="openLetter">💌 Buka Surat untuk Ummi</button>
+        <article class="letter-card" id="letterCard" hidden>
+          <div class="letter-top">♡ &nbsp; DENGAN CINTA, UNTUK UMMI &nbsp; ♡</div>
+          <h3>Untuk Ummi tersayang,</h3>
+          <p>Selamat ulang tahun, Ummi sayangku. 💙❤️ Hari ini adalah hari yang begitu istimewa, karena hari ini dunia merayakan hadirnya seseorang yang begitu berarti dalam hidupku: Ummi.</p>
+          <p>Terima kasih, ya, Mi, karena selalu menjadi tempat pulang yang paling hangat. Terima kasih untuk kasih sayang yang tak pernah habis, doa-doa yang diam-diam menguatkanku, perhatian dalam hal-hal kecil, pengorbanan yang mungkin tak selalu kulihat, dan dukungan yang membuatku berani melangkah. Aku bersyukur sekali Allah menitipkanku kepada Ummi.</p>
+          <p>Maafkan aku kalau selama ini masih sering membuat Ummi khawatir, kalau ada kata-kata atau sikapku yang belum cukup baik, atau kalau aku belum selalu bisa menunjukkan betapa besar rasa sayangku. Aku masih terus belajar menjadi anak yang lebih baik dan lebih bisa membahagiakan Ummi.</p>
+          <p>Di ulang tahun Ummi ini, aku berdoa semoga Allah selalu menjaga Ummi dalam kesehatan, memberi umur yang panjang dan penuh berkah, melapangkan rezeki, menenangkan hati, memudahkan setiap urusan, dan menghadirkan banyak alasan untuk tersenyum. Semoga setiap lelah Ummi diganti dengan kebaikan, setiap doa dijawab dengan cara terbaik, dan Ummi selalu berada dalam lindungan serta kasih sayang Allah. Semoga bahagia dunia dan akhirat, aamiin.</p>
+          <p>Ummi, mungkin aku tak selalu pandai merangkai kata, tapi satu hal yang selalu ingin Ummi tahu: aku sayang Ummi, lebih dari yang bisa dijelaskan oleh kata-kata. Semoga aku bisa terus membuat Ummi bangga dan menemani Ummi dalam banyak hari bahagia yang akan datang. Peluk jauh yang paling erat untuk Ummi. 🫶</p>
+          <p class="letter-signoff">Peluk dan doa paling hangat untuk Ummi,<br><strong>Mutiara Afifah ❤️</strong></p>
+          <div class="letter-bottom">Semoga hari Ummi seindah hati Ummi ✦</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="memories-section section-wrap" id="kenangan">
+      <div class="section-heading">
+        <p class="eyebrow">Potongan cerita penuh cinta</p>
+        <h2>Kenangan bersama Ummi 📸</h2>
+        <p>Setiap foto menyimpan cerita kecil yang ingin kusimpan selamanya.</p>
+      </div>
+      <div class="gallery">
+        <button class="gallery-item" data-caption="Momen yang selalu ingin dikenang">
+          <img src="foto/kenangan-1.jpg" alt="Kenangan keluarga 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="photo-placeholder"><span>♡</span><b>Kenangan 01</b><small>foto/kenangan-1.jpg</small></span><span class="gallery-caption">Momen yang ingin dikenang ✦</span>
+        </button>
+        <button class="gallery-item" data-caption="Hangatnya kebersamaan">
+          <img src="foto/kenangan-2.jpg" alt="Kenangan keluarga 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="photo-placeholder"><span>♡</span><b>Kenangan 02</b><small>foto/kenangan-2.jpg</small></span><span class="gallery-caption">Hangatnya kebersamaan ✦</span>
+        </button>
+        <button class="gallery-item" data-caption="Bahagia dalam hal sederhana">
+          <img src="foto/kenangan-3.jpg" alt="Kenangan keluarga 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <span class="photo-placeholder"><span>♡</span><b>Kenangan 03</b><small>foto/kenangan-3.jpg</small></span><span class="gallery-caption">Bahagia dalam hal sederhana ✦</span>
+        </button>
+      </div>
+      <p class="gallery-note">Catatan: foto asli yang pernah diunggah tidak tersedia di ruang kerja proyek ini. Ganti placeholder dengan salinan foto asli Ummi dan keluarga sesuai petunjuk README.</p>
+    </section>
+
+    <section class="prayer-section section-wrap">
+      <div class="prayer-card">
+        <div class="prayer-icon">☾ ✨</div>
+        <p class="eyebrow">Doa yang selalu menyertai</p>
+        <h2>Semoga Allah selalu menjaga Ummi</h2>
+        <p class="prayer-teaser">Ada doa yang ingin kupanjatkan khusus untuk Ummi hari ini.</p>
+        <button class="button light" id="openPrayer">Buka Doa Spesial ✨</button>
+        <div class="prayer-text" id="prayerText" hidden>
+          <p>Ya Allah, Tuhan Yang Maha Pengasih, limpahkanlah kesehatan dan kekuatan untuk Ummi. Karuniakan umur yang panjang, penuh berkah dan kebaikan. Tenangkan hatinya, lapangkan dadanya, baikkan rezekinya, dan mudahkanlah setiap urusannya.</p>
+          <p>Lindungilah Ummi di mana pun ia berada. Gantikan setiap lelahnya dengan pahala, setiap sedihnya dengan ketenangan, dan setiap harapnya dengan jalan terbaik dari-Mu. Kelilingi hari-harinya dengan orang-orang yang menyayanginya, bahagiakan hatinya di dunia, dan anugerahkan kebahagiaan di akhirat. Aamiin ya Rabbal ‘alamin. 🤍</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="footer-heart">♥</div><p>Dibuat dengan seluruh cinta oleh <strong>Mutiara Afifah</strong></p><small>Untuk Ummi, hari ini dan setiap hari. 💙❤️</small></footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto kenangan diperbesar">
+    <button class="lightbox-close" id="closeLightbox" aria-label="Tutup foto">×</button>
+    <img id="lightboxImage" alt="Foto kenangan diperbesar"><p id="lightboxCaption"></p>
+  </div>
+  <div class="celebration" id="celebration" aria-hidden="true"></div>
+</body>
+</html>
